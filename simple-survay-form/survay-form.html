@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Survay form</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #f4f8fb;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main {
+        max-width: 600px;
+        padding: 20px 40px;
+        margin: 40px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      main h1 {
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+      }
+      label {
+        margin-top: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      select,
+      textarea {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      fieldset {
+        border: none;
+        margin-top: 20px;
+      }
+      legend {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <main>
+      <h1>Feedback Survey Form</h1>
+
+      <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter Your Name" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter you Mail ID"
+          required
+        />
+
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          name="age"
+          placeholder="AGE"
+          required
+          min="1"
+          max="150"
+        />
+
+        <label for="feedback-type">Type of Feedback</label>
+        <select id="feedback-type" name="feedback-type">
+          <option value="positive">Positive</option>
+          <option value="negative">Negative</option>
+          <option value="Suggestion">Suggestion</option>
+        </select>
+
+        <fieldset>
+          <legend>Services Used:</legend>
+          <input
+            type="checkbox"
+            name="services"
+            value="service1"
+            id="service1"
+          />
+          <label for="service1"> Service 1</label>
+          <input
+            type="checkbox"
+            name="services"
+            value="service2"
+            id="service2"
+          />
+          <label for="service2"> Service 2</label>
+          <input
+            type="checkbox"
+            name="services"
+            value="service3"
+            id="service3"
+          />
+          <label for="service3"> Service 3</label>
+        </fieldset>
+
+        <label for="comments">Additional Comments</label>
+        <textarea id="commentsd" name="comments" rows="4"></textarea>
+
+         <input type="submit" name="submit" value="Submit Feedback" /> 
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </main>-->
+    <main>
+      <h1>Feedback Survey Form</h1>
+      <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="150" />
+        <label for="feedback-type">Type of Feedback:</label>
+        <select id="feedback-type" name="feedback-type">
+          <option value="positive">Positive</option>
+          <option value="negative">Negative</option>
+          <option value="suggestion">Suggestion</option>
+        </select>
+        <fieldset>
+          <legend>Services Used:</legend>
+          <input
+            type="checkbox"
+            id="service1"
+            name="services"
+            value="service1"
+          />
+          <label for="service1">Service 1</label><br />
+          <input
+            type="checkbox"
+            id="service2"
+            name="services"
+            value="service2"
+          />
+          <label for="service2">Service 2</label><br />
+          <input
+            type="checkbox"
+            id="service3"
+            name="services"
+            value="service3"
+          />
+          <label for="service3">Service 3</label>
+        </fieldset>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 3</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8; /*change*/
+        font-family: "Arial", sans-serif;
+      }
+      header {
+        background-color: #333333;
+        padding: 10px 10px;
+        color: white;
+        justify-content: space-between;
+        /*        display: flex;
+        align-items: center;*/
+      }
+      section.logo {
+        font-size: 27px;
+        font-weight: bold;
+      }
+      section.navbar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .navbar ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      section.section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      section.wrap {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      /* .prod1 .prod2 {
+        margin: 10px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      } */
+      button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      footer {
+        background-color: #333333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="section">
+        <section class="logo">Our Online Store</section>
+        <section class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </section>
+      </section>
+    </header>
+    <section class="wrap">
+      <section class="prod1">
+        <img
+          src="/image/product.jpg"
+          alt="Product Image"
+          height="500px"
+          width="500px"
+        />
+        <p>$19.99</p>
+        <button>Add To Cart</button>
+      </section>
+      <section class="prod2">
+        <img
+          src="/image/product.jpg"
+          alt="Product Image"
+          height="500px"
+          width="500px"
+        />
+        <p>$19.99</p>
+        <button>Add To Cart</button>
+      </section>
+    </section>
+    <section class="wrap">
+      <section class="prod1">
+        <img
+          src="/image/product.jpg"
+          alt="Product Image"
+          height="500px"
+          width="500px"
+        />
+        <p>$19.99</p>
+        <button>Add To Cart</button>
+      </section>
+      <section class="prod2">
+        <img
+          src="/image/product.jpg"
+          alt="Product Image"
+          height="500px"
+          width="500px"
+        />
+        <p>$19.99</p>
+        <button>Add To Cart</button>
+      </section>
+    </section>
+    <footer>
+      <p>© Our Online Store. All Right Reserved.</p>
+    </footer>
+  </body>
+</html>
